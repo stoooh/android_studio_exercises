@@ -8,9 +8,16 @@
         android:id="@+id/recycler_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Placeholder"
+        tools:text="cryptocurrency"
         android:layout_gravity="center"
         android:layout_margin="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="78dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="30dp"
         />
 
 </FrameLayout>

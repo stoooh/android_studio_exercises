@@ -13,13 +13,13 @@ class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
@@ -30,8 +30,8 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val list = listOf(ItemList(R.string.hello), ItemList(R.string.world),
-            ItemList(R.string.banana), ItemList(R.string.strawberry), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple), ItemList(R.string.apple))
+        val list = listOf(ItemList(R.string.hello, R.drawable.baseline_currency_bitcoin_24), ItemList(R.string.world, R.drawable.baseline_euro_24),
+            ItemList(R.string.banana, R.drawable.baseline_euro_24), ItemList(R.string.strawberry, R.drawable.baseline_euro_24), ItemList(R.string.apple,R.drawable.baseline_euro_24), ItemList(R.string.apple,R.drawable.baseline_euro_24), ItemList(R.string.apple, R.drawable.baseline_euro_24) )
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = ListAdapter(list)
 

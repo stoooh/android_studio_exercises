@@ -10,6 +10,7 @@ class ListAdapter(private val list: List<ItemList>) : RecyclerView.Adapter<ListA
     inner class ViewHolder(private val binding: ItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(item: ItemList){
             binding.recyclerText.setText(item.text)
+            binding.image.setImageResource(item.image)
         }
     }
 

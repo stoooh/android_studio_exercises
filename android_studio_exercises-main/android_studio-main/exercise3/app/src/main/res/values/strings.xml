@@ -5,10 +5,10 @@
     <string name="hello_blank_fragment2">second fragment</string>
     <string name="button">press me</string>
     <string name="text">write something</string>
-    <string name="hello">hello</string>
-    <string name="world">world</string>
-    <string name="banana">banana</string>
-    <string name="apple">apple</string>
+    <string name="hello">ethereum</string>
+    <string name="world">dogecoin</string>
+    <string name="banana">bitcoin</string>
+    <string name="apple">bitcoin</string>
     <string name="peach">peach</string>
-    <string name="strawberry">strawberry</string>
+    <string name="strawberry">xrp</string>
 </resources>
